@@ -1,0 +1,19 @@
+// 1: overrides van default bootstrap voorkeuren
+
+$blue: hotpink;
+
+$font-family-sans-serif: "Balsamiq Sans", cursive;
+
+// 2: laden van bootstrap (en compilen)
+@import "mixins";
+@import "bootstrap/bootstrap";
+
+// 3: eigen code:
+body {
+    background-color: pink;
+    @include bier(6rem);
+}
+
+p {
+    @include bier(2rem);
+}
